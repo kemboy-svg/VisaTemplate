@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @media (max-width: 767px) {
+    .col-lg-7 {
+      width: 100%;
+    }
+    .col-lg-5 {
+      width: 100%;
+    }
+  }
+                .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 50%; /* Make the logo circular */
+  border: none; /* Remove the border around the logo */
+}
+
+.company-name {
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.name {
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AMERZONEC INTERNATIONAL TRAVEL AGENCY</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Travel with Confidence" name="keywords">
+    <meta content="Travel with Confidence" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner">
+    
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0">
+                  <div class="logo-container">
+                    <img src="img/logo2.jpg" alt="Logo" class="logo">
+                    <div class="company-name">
+                      AMERZONE C<br>
+                      INTERNATIONAL<br>
+                      <span class="tagline">"Travel with Confidence"</span>
+                    </div>
+                  </div>
+                </h1>
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="service.html" class="dropdown-item">Visa Applications</a>
+                        <a href="service.html" class="dropdown-item">Travel and Immigration Consultation</a>
+                        <a href="service.html" class="dropdown-item">Job Opportunities</a>
+                        <a href="service.html" class="dropdown-item">Flight Bookings</a>
+                        <a href="service.html" class="dropdown-item">Hotel Bookings</a>
+                       
+                    </div>
+                
+                
+                </div>
+                    <div class="nav-item dropdown">
+                        <a href="detail.html" class="nav-link">Blog</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="countries.html" class="nav-link">Countries</a>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end" >
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="contact.html"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 900px; height: 400px; overflow: hidden; background-color: #f0f0f0;">
+                        <img style="width: 100%; height: 100%; object-fit: cover;" src="img/logo1.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px; height: 300px; overflow: hidden;">
+                            <!-- Your caption content goes here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-primary py-1 bg-header" style="margin-bottom: 10px; max-height: 200px;">
+            <div class="row h-100">
+                <div class="col-12 my-auto text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Blog</h1>
+                    <a href="" class="h5 text-white">Home</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h5 text-white">Blog Details</a>
+                </div>
+            </div>
+        </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <!-- Blog Detail Start -->
+                    <hr>
+                    <div class="mb-5">
+                        
+                        <h1 class="mb-4">IRCC Makes New Extension For Visitors to Work Permit Policy By 2 Years</h1><img class="img-fluid w-100 rounded mb-5" src="img/ircc.jpg" alt="">
+                          <p><em>By Admin</em></p>
+                          <p>Today, the Immigration, Refugees and Citizenship Canada (IRCC) has announced the extension of a temporary policy allowing individuals with visitor visas in Canada to apply for work permits within the country. This extension comes as the previous temporary policy was scheduled to expire today, making it significant news for visitor visa holders.</p>
+                          <p>Canada implemented this policy during the pandemic to address labor shortages by permitting visitors in the country to apply for work permits, which is typically not possible for foreign nationals with visitor visas.</p>
+                          <p>As per a news release by the IRCC, foreign nationals who are currently visiting Canada and have received a genuine employment offer will now have the opportunity to apply for and obtain a work permit without needing to leave the country.</p>
+                          <p>Furthermore, visitors who are applying under this public policy and have held a work permit within the past 12 months will also be eligible to obtain a temporary work permit to start working for their new employer.</p>
+                          <p>This public policy has now been extended for an additional two years, until February 28, 2025. The objective of this extension is to provide Canadian companies with an alternative solution as many of them are facing significant labor shortages.</p>
+                          <p>To be eligible for this temporary public policy, applicants must meet the following criteria:</p>
+                          <ul>
+                            <li>Hold a valid visitor status in Canada at the time of application.</li>
+                            <li>Have a job offer supported by a labor market impact assessment (LMIA) or an LMIA-exempt offer of employment.</li>
+                            <li>Submit an application for an employer-specific work permit before February 28, 2025.</li>
+                            <li>Satisfy all other standard admissibility requirements.</li>
+                          </ul>
+                          <p>Candidates with visitor status who have held a work permit within the last 12 months under this temporary policy may also qualify if they meet the following requirements:</p>
+                          <ul>
+                            <li>When you apply, you must be physically present in Canada.</li>
+                            <li>You must remain in Canada while your application is being processed.</li>
+                            <li>You will not be eligible for this public policy if you depart while your application is being processed.</li>
+                            <li>While applying for a work permit, you must be a visitor with valid status.</li>
+                            <li>If your visitor status has expired, you must restore it before applying for a work permit.</li>
+                            <li>Applied for an employer-specific work permit between August 24, 2020, and February 28, 2025.</li>
+                            <li>Had a valid work permit in the 12 months before applying for a new work permit.</li>
+                          </ul>
+                          <p>Candidates with visitor status who have held a valid work permit in the last 12 months can follow specific guidelines to get interim work authorization.</p>
+                    </div>
+                    <hr>
+                    <div class="mb-5">
+                        
+                        <h1 class="mb-4">Visa Requirements for Your Business Trip to Canada</h1><img class="img-fluid w-100 rounded mb-5" src="img/blog2.jpg" alt="">
+                          <p><em>By Admin</em></p>
+                        <p>Planning a business trip to Canada? Understanding the visa requirements is essential to ensure a smooth and successful journey. In this blog post, we will guide you through the necessary steps and documentation needed to obtain a visa for your business trip to Canada.</p>
+                        <p><b>1. Determine the Appropriate Visa Category:</b><br>
+                        Canada offers various visa categories depending on the purpose of your visit. For a business trip, the most common visa category is the Temporary Resident Visa (TRV), also known as a visitor visa. This visa allows you to stay in Canada for a limited period for business-related activities.</p>
+                        <p><b>2. Gather Required Documents:</b><br>
+                        To apply for a TRV for your business trip to Canada, you will need the following documents:</p>
+                        <ul>
+                           <li>Valid passport: Ensure your passport is valid for at least six months beyond your planned stay in Canada.</li>
+                           <li>Application form: Complete the Visitor Visa application form accurately and honestly.</li>
+                           <li>Proof of business activities: Provide documentation such as invitation letters from Canadian companies, conference registration details, or meeting agendas to demonstrate the purpose of your visit.</li>
+                           <li>Travel itinerary: Present your travel plans, including flight reservations, accommodation details, and a comprehensive itinerary of your business activities in Canada.</li>
+                           <li>Financial proof: Show evidence of sufficient funds to cover your expenses during your stay, such as bank statements, sponsorship letters, or proof of employment and income.</li>
+                           <li>Letter of employment: Obtain a letter from your employer confirming your employment status, the purpose of your trip, and the duration of your leave.</li>
+                        </ul>
+                        <p><b>3. Apply for the Visa:</b><br>
+                        Once you have gathered all the necessary documents, submit your visa application to the nearest Canadian visa office or through an online application portal. Pay the required visa fee and provide biometric information if applicable. Apply well in advance of your planned travel dates to allow for processing time.</p>
+                        <p><b>4. Attend an Interview (if required):</b><br>
+                        In some cases, a visa officer may request an interview to assess your application further. Prepare for the interview by reviewing your application and supporting documents. Be ready to answer questions regarding your business activities, intent to return to your home country, and your ties to your home country.</p>
+                        <p><b>5. Await the Visa Decision:</b><br>
+                        After submitting your application, patiently wait for the visa decision. The processing time may vary, so track the progress of your application online or through the visa office. Once approved, you will receive your visa stamp or travel authorization document.</p>
+                        <p><b>6. Plan Your Business Trip:</b><br>
+                        With your visa approved, it's time to finalize your travel arrangements. Book your flights, secure accommodation, and create a detailed itinerary for your business activities in Canada. Familiarize yourself with Canadian customs and business etiquette to make the most out of your trip.</p>
+                        <p>In conclusion, obtaining the appropriate visa for your business trip to Canada is crucial for a successful and hassle-free experience. By understanding the visa requirements and following the application process, you can confidently embark on your business journey to Canada. AmerzoneC International is here to assist you throughout this process.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="mb-5">
+                        
+                        <h1 class="mb-4">International Students Flock to Germany for Job Prospects, Study Reveals</h1><img  class="img-fluid w-100 rounded mb-5" src="img/blog1.jpg" alt="">
+                          <p><em>By Admin</em></p>
+                        <p>Germany has emerged as a top destination for international students seeking excellent academic opportunities and promising job prospects. A recent study has revealed that an increasing number of students from around the world are choosing Germany as their preferred study abroad destination. In this blog post, we will explore the reasons behind Germany's popularity among international students and its thriving job market.</p>
+                        <p><b>Quality Education:</b><br>
+                        Germany is renowned for its high-quality education system, offering a wide range of academic programs across various disciplines. The country's universities are known for their research-oriented approach, modern facilities, and experienced faculty. International students have access to state-of-the-art resources, libraries, and laboratories, enhancing their learning experience.</p>
+                        <p><b>Tuition-Free or Low Tuition Fees:</b><br>
+                        One of the main attractions for international students in Germany is the affordable cost of education. Many public universities in Germany offer tuition-free or low tuition fees, allowing students to pursue their studies without a heavy financial burden. This accessibility to quality education makes Germany an appealing choice for students from diverse backgrounds.</p>
+                        <p><b>Job Prospects:</b><br>
+                        Germany's strong economy and robust job market make it an attractive destination for international students seeking employment opportunities after graduation. The country has a high demand for skilled professionals, particularly in STEM fields, engineering, and IT sectors. International students who successfully complete their studies in Germany have the opportunity to explore a wide range of career options and secure well-paying jobs.</p>
+                        <p><b>Work Opportunities During Studies:</b><br>
+                        Germany provides ample work opportunities for international students while they are pursuing their studies. Students are allowed to work part-time for up to 20 hours per week during the semester and full-time during semester breaks. These work opportunities not only help students support themselves financially but also provide valuable professional experience and networking opportunities.</p>
+                        <p><b>Post-Study Work Options:</b><br>
+                        Germany offers attractive post-study work options for international students. Upon graduation, students are eligible for an 18-month residence permit to search for job opportunities related to their field of study. This allows students to gain practical work experience in Germany and increase their chances of securing long-term employment and even permanent residency.</p>
+                        <p><b>Cultural and Social Experience:</b><br>
+                        Germany's rich cultural heritage, vibrant cities, and diverse communities provide international students with a unique cultural and social experience. Students have the opportunity to immerse themselves in the German language, explore historical landmarks, and engage with a multicultural society. This exposure enhances their personal growth, intercultural competence, and global perspective.</p>
+                        <p>Overall, the combination of quality education, affordable or tuition-free fees, abundant job prospects, work opportunities during studies, and favorable post-study work options makes Germany an attractive destination for international students. With its welcoming environment, students can enjoy a fulfilling academic journey while laying a solid foundation for their future careers. Consider Germany as your study abroad destination and unlock a world of opportunities.</p>
+                     </div>
+
+
+                    <!-- Blog Detail End -->
+    
+                    <!-- Comment List Start -->
+                    <div class="mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">2 Comments</h3>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="ps-3">
+                                <h6><a href="">Faith Chemtai</a> <small><i>31 Jan 2023</i></small></h6>
+                                <p>"I just contacted AmerzoneC International for help with obtaining a visa for an upcoming trip, and I'm already impressed with their service. The team was very friendly and responsive, and they took the time to understand my travel plans and needs. They provided me with a clear explanation of the visa requirements and the application process, and they made sure that I had all the necessary documents in order. I feel much more confident about my travel plans now that I have their assistance, and I would recommend AmerzoneC International to anyone in need of visa and immigration services."</p>
+                                <button class="btn btn-sm btn-light">Reply</button>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="ps-3">
+                                <h6><a href="">John Makau</a> <small><i>11 Aug 2022</i></small></h6>
+                                <p>"Thanks to Amerzone C International, I was able to obtain a visa for my trip to Europe in record time! The team was very efficient and knowledgeable, and they made sure that I had all the necessary documents in order. They also provided me with some great travel tips and recommendations for my trip. I highly recommend AmerzoneC International to anyone in need of visa and immigration assistance."</p>
+                                <button class="btn btn-sm btn-light">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comment List End -->
+    
+                    <!-- Comment Form Start -->
+                    <div class="bg-light rounded p-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Leave A Comment</h3>
+                        </div>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control bg-white border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control bg-white border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-white border-0" rows="5" placeholder="Comment"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Leave Your Comment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Comment Form End -->
+                </div>
+    
+                <!-- Sidebar Start -->
+                <div class="col-lg-4">
+                    <!-- Search Form Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Keyword">
+                            <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                    <!-- Search Form End -->
+    
+                    <!-- Category Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Categories</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="detail.html"><i class="bi bi-arrow-right me-2"></i>Immigration News</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="detail.html"><i class="bi bi-arrow-right me-2"></i>Visa Applications</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="detail.html"><i class="bi bi-arrow-right me-2"></i>Job Applications</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="detail.html"><i class="bi bi-arrow-right me-2"></i>Personal Stories</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="detail.html"><i class="bi bi-arrow-right me-2"></i>Travelling Tips</a>
+                        </div>
+                    </div>
+                    <!-- Category End -->
+    
+                    <!-- Recent Post Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Recent Post</h3>
+                        </div>
+                        <div class="d-flex rounded overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/ircc.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">IRCC Makes New Extension For Visitors to Work Permit Policy By 2 Years
+                            </a>
+                        </div>
+                        <div class="d-flex rounded overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/blog2.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Visa Requirements for your business trip to Canada
+                            </a>
+                        </div>
+                        <div class="d-flex rounded overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/blog1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">International Students Flock to Germany for Job Prospects, Study Reveals
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Recent Post End -->
+    
+                    <!-- Image Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <img src="img/blog2.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                    <!-- Image End -->
+    
+                    <!-- Plain Text Start -->
+                    <div class="wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Why Visa?</h3>
+                        </div>
+                        <div class="bg-light text-center" style="padding: 30px;">
+                            <p>Having a visa is essential for international travel, as it serves as a legal document that allows foreign nationals to enter and stay in a country for a specific period of time. A visa is typically issued by a foreign country's embassy or consulate and is required by most countries for entry, with some exceptions for visa-free travel agreements.
+
+                            At AmerzoneC International, we understand the importance of obtaining a visa and other necessary travel documents, and we are committed to helping our clients navigate the visa and immigration process with ease and confidence.</p>
+                            <a href="" class="btn btn-primary py-2 px-4">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Plain Text End -->
+                </div>
+                <!-- Sidebar End -->
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+    
+
+   
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">Nairobi ,Kenya</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">amerzonec@gmail.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+254 746 220 773</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="detail.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="detail.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">copyright 2023|<a class="text-white " href="#">Amerzone C International Travel Agency|</a>. All Rights Reserved. 
+						
+						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
