@@ -11,41 +11,129 @@
       width: 100%;
     }
   }
-                .logo-container {
+  @media (min-width: 992px) {
+  /* Add styles specific to PC here */
+  
+  /* Example: Increase the width of sidebars */
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+  
+  .col-lg-8 {
+    width: 66.66667%;
+  }
+}
+
+
+/* Styles for mobile */
+
+@media (max-width: 991px) {
+  /* Add styles specific to mobile here */
+  
+  /* Example: Decrease the width of sidebars */
+  .col-lg-4 {
+    width: 100%;
+  }
+  
+  .col-lg-8 {
+    width: 100%;
+  }
+}
+  
+@media (max-width: 576px) {
+ .logo-container {
   display: flex;
   align-items: center;
+  margin-left: -85px; /* Adjust the margin as needed */
+}
+.company-name {
+  font-size: 15px;
+  text-align: left;
+  margin-left:-10px !important;
+}
+.logo-container {
+  margin-left: -60px !important; /* Adjust the margin as needed */
+}
+}
+  .logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: -40px; /* Adjust the margin as needed */
 }
 
 .logo {
   width: 100px;
   height: 100px;
-  margin-right: 10px;
-  border-radius: 50%; /* Make the logo circular */
-  border: none; /* Remove the border around the logo */
+  margin-right: 3px;
+  border-radius: 50%;
+  border: none;
 }
 
 .company-name {
-  font-size: 24px;
-  text-align: center;
+  font-size: 15px;
+  text-align: left;
+  margin-left:0px;
 }
-
 
 .name {
   font-weight: bold;
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: 8px;
   color: #999;
-  text-align: center;
+  text-align: left;
 }
+
+.navbar-collapse {
+  margin-left: 10px;
+}
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        position: absolute;
+        top: 30px;
+        right:-10px;
+        transform: translate(-50%, 50%);
+    }
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+}
+
+.whatsapp-icon-box {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.whatsapp-icon-text {
+  color: #555555;
+}
+.whatsapp-icon-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> AMERZONEC INTERNATIONAL TRAVEL AGENCY</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Travel with Confidence" name="keywords">
-    <meta content="Travel with Confidence" name="description">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -88,18 +176,20 @@
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0">
-                  <div class="logo-container">
-                    <img src="img/logo2.jpg" alt="Logo" class="logo">
-                    <div class="company-name">
-                      AMERZONE C<br>
-                      INTERNATIONAL<br>
-                      <span class="tagline">"Travel with Confidence"</span>
-                    </div>
-                  </div>
-                </h1>
-              </a>
+      <a href="index.html" class="navbar-brand p-0">
+  <h1 class="m-0">
+    <div class="logo-container">
+      <img src="img/logo2.jpg" alt="Logo" class="logo">
+      <div class="company-name">
+        AMERZONE C<br>
+        INTERNATIONAL<br>
+        <span class="tagline">"Travel with Confidence"</span>
+      </div>
+    </div>
+  </h1>
+</a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
@@ -130,27 +220,30 @@
                 </div>
                 <div class="col-lg-4 text-center text-lg-end" >
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="contact.html"><i class="fab fa-youtube fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-instagram fw-normal"></i></a> -->
+                    <div><a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://youtube.com/@AMERZONECTRAVELAGENCY"><i class="fab fa-youtube fw-normal" ></i></a></div>
+                    <!-- <div style="margin-left: 10px;"><a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.tiktok.com/">
+                        <img src="img/tiktok.jpg" alt="TikTok" style="width: 24px; height: 24px;" style="margin-left: 10px;">
+                      </a></div> -->
                 </div>
             </div>
         </nav>
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center align-items-center" style="width: 900px; height: 400px; overflow: hidden; background-color: #f0f0f0;">
-                        <img style="width: 100%; height: 100%; object-fit: cover;" src="img/logo1.jpg" alt="Image">
-                    </div>
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px; height: 300px; overflow: hidden;">
-                            <!-- Your caption content goes here -->
-                        </div>
-                    </div>
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center" style="width: 100%; overflow: hidden; background-color: #f0f0f0;">
+                  <img style="width:1000px; height: 350px;" src="img/blog.jpg" alt="Image">
                 </div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                  <div class="p-3" style="max-width: 100px; height: 1000px; overflow: hidden;">
+                    <!-- Your caption content goes here -->
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
         <div class="container-fluid bg-primary py-1 bg-header" style="margin-bottom: 10px; max-height: 200px;">
             <div class="row h-100">
@@ -164,7 +257,10 @@
         </div>
     <!-- Navbar End -->
 
-
+    <a href="https://wa.me/254746220773" target="_blank" class="whatsapp-icon">
+        <img src="img/whatsapp-icon.jpg" alt="WhatsApp" class="whatsapp-icon-img">
+        <span class="whatsapp-icon-text">Contact Us</span>
+      </a>
     <!-- Full Screen Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
@@ -396,8 +492,9 @@
     
 
    
-     <!-- Footer Start -->
-     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-8 col-md-6">
@@ -412,18 +509,27 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">amerzonec@gmail.com</p>
+                                <p class="mb-0"><a href="amerzonec@gmail.com"></a>amerzonec@gmail.com</a></p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+254 746 220 773</p>
+                                <p class="mb-0"><a href="tel:+254746220773">+254 746 220 773</a></p>
                             </div>
                             <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a> -->
                                 <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+                                <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                                <a class="btn btn-primary btn-square" href="https://youtube.com/@AMERZONECTRAVELAGENCY">
+                                    <i class="fab fa-youtube fw-normal"></i>
+                                  </a>
+                                  
+                                  <a class="btn btn-primary btn-square" href="https://www.tiktok.com/@amerzonetravelagency?_t=8cKwa8FmmJy&_r=1" style="margin-left: 10px;">
+                                    <img src="img/tiktok.jpg" alt="TikTok" class="fa-fw">
+                                  </a>
+                                  
+                                  
+                                  
 
 
                             </div>
@@ -459,23 +565,23 @@
     </div>
     <div class="container-fluid text-white" style="background: #061429;">
         <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">copyright 2023|<a class="text-white " href="#">Amerzone C International Travel Agency|</a>. All Rights Reserved. 
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-6">
+              <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                <p class="mb-0">
+                  <a class="text-white" href="index.html">Amerzone C International Travel Agency</a> | &copy; 2023. All Rights Reserved.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+      
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="detail.html" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

@@ -11,41 +11,99 @@
       width: 100%;
     }
   }
-                       .logo-container {
+  
+  @media (max-width: 576px) {
+ .logo-container {
   display: flex;
   align-items: center;
+  margin-left: -85px; /* Adjust the margin as needed */
+}
+.company-name {
+  font-size: 15px;
+  text-align: left;
+  margin-left:-10px !important;
+}
+.logo-container {
+  margin-left: -60px !important; /* Adjust the margin as needed */
+}
+}
+  .logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: -40px; /* Adjust the margin as needed */
 }
 
 .logo {
   width: 100px;
   height: 100px;
-  margin-right: 10px;
-  border-radius: 50%; /* Make the logo circular */
-  border: none; /* Remove the border around the logo */
+  margin-right: 3px;
+  border-radius: 50%;
+  border: none;
 }
 
 .company-name {
-  font-size: 24px;
-  text-align: center;
+  font-size: 15px;
+  text-align: left;
+  margin-left:0px;
 }
-
 
 .name {
   font-weight: bold;
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: 8px;
   color: #999;
-  text-align: center;
+  text-align: left;
 }
+
+.navbar-collapse {
+  margin-left: 10px;
+}
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        position: absolute;
+        top: 30px;
+        right:-10px;
+        transform: translate(-50%, 50%);
+    }
+}
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+}
+
+.whatsapp-icon-box {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.whatsapp-icon-text {
+  color: #555555;
+}
+.whatsapp-icon-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> AMERZONEC INTERNATIONAL TRAVEL AGENCY</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Travel with Confidence" name="keywords">
-    <meta content="Travel with Confidence" name="description">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -65,12 +123,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init("37vD4l3LG3wjsWKeO");
-    })();
-  </script>
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -94,18 +146,21 @@
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0">
-                  <div class="logo-container">
-                    <img src="img/logo2.jpg" alt="Logo" class="logo">
-                    <div class="company-name">
-                      AMERZONE C<br>
-                      INTERNATIONAL<br>
-                      <span class="tagline">"Travel with Confidence"</span>
-                    </div>
-                  </div>
-                </h1>
-              </a>
+      <a href="index.html" class="navbar-brand p-0">
+  <h1 class="m-0">
+    <div class="logo-container">
+      <img src="img/logo2.jpg" alt="Logo" class="logo">
+      <div class="company-name">
+        AMERZONE C<br>
+        INTERNATIONAL<br>
+        <span class="tagline">"Travel with Confidence"</span>
+      </div>
+    </div>
+  </h1>
+</a>
+
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
@@ -136,28 +191,31 @@
                 </div>
                 <div class="col-lg-4 text-center text-lg-end" >
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="contact.html"><i class="fab fa-youtube fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-instagram fw-normal"></i></a> -->
+                    <div><a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://youtube.com/@AMERZONECTRAVELAGENCY"><i class="fab fa-youtube fw-normal" ></i></a></div>
+                    <!-- <div style="margin-left: 10px;"><a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.tiktok.com/">
+                        <img src="img/tiktok.jpg" alt="TikTok" style="width: 24px; height: 24px;" style="margin-left: 10px;">
+                      </a></div> -->
                 </div>
             </div>
         </nav>
 
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center align-items-center" style="width: 900px; height: 400px; overflow: hidden; background-color: #f0f0f0;">
-                        <img style="width: 100%; height: 100%; object-fit: cover;" src="img/logo1.jpg" alt="Image">
-                    </div>
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px; height: 300px; overflow: hidden;">
-                            <!-- Your caption content goes here -->
-                        </div>
-                    </div>
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center" style="width: 100%; overflow: hidden; background-color: #f0f0f0;">
+                  <img style="width:1000px; height: 350px;" src="img/pic5.jpg" alt="Image">
                 </div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                  <div class="p-3" style="max-width: 100px; height: 1000px; overflow: hidden;">
+                    <!-- Your caption content goes here -->
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
         <div class="container-fluid bg-primary py-1 bg-header" style="margin-bottom: 10px; max-height: 200px;">
             <div class="row h-100">
@@ -171,7 +229,10 @@
         </div>
     <!-- Navbar End -->
 
-
+    <a href="https://wa.me/254746220773" target="_blank" class="whatsapp-icon">
+        <img src="img/whatsapp-icon.jpg" alt="WhatsApp" class="whatsapp-icon-img">
+        <span class="whatsapp-icon-text">Contact Us</span>
+      </a>
     <!-- Full Screen Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
@@ -206,7 +267,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+254746220773</h4>
+                            <h4 class="text-primary mb-0"><a href="tel:+254746220773">+254746220773</a></h4>
                         </div>
                     </div>
                 </div>
@@ -217,7 +278,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Email to get free quote</h5>
-                            <h4 class="text-primary mb-0">amerzonec@gmail.com</h4>
+                            <h4 class="text-primary mb-0"><a href="amerzonec@gmail.com">amerzonec@gmail.com</a></h4>
                         </div>
                     </div>
                 </div>
@@ -234,23 +295,25 @@
                 </div>
             </div>
             <div class="row g-5">
+              
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form class="contact-form">
+                  <h2 class="text-center mb-4">Contact Us:</h2>
+                    <form>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" id="name-input" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
                             </div>
                             <div class="col-md-6">
-                                <input type="email" id="email-input" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" id="phone-input" class="form-control border-0 bg-light px-4" placeholder="Your Phone Number" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" id="subject-input" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Phone Number" style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <textarea id="message-input" class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
@@ -260,7 +323,7 @@
                 </div>
                 <!-- <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                        src=""
                         frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div> -->
@@ -268,6 +331,8 @@
         </div>
     </div>
     <!-- Contact End -->
+
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -284,18 +349,27 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">amerzonec@gmail.com</p>
+                                <p class="mb-0"><a href="amerzonec@gmail.com"></a>amerzonec@gmail.com</a></p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+254 746 220 773</p>
+                                <p class="mb-0"><a href="tel:+254746220773">+254 746 220 773</a></p>
                             </div>
                             <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a> -->
                                 <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+                                <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                                <a class="btn btn-primary btn-square" href="https://youtube.com/@AMERZONECTRAVELAGENCY">
+                                    <i class="fab fa-youtube fw-normal"></i>
+                                  </a>
+                                  
+                                  <a class="btn btn-primary btn-square" href="https://www.tiktok.com/@amerzonetravelagency?_t=8cKwa8FmmJy&_r=1" style="margin-left: 10px;">
+                                    <img src="img/tiktok.jpg" alt="TikTok" class="fa-fw">
+                                  </a>
+                                  
+                                  
+                                  
 
 
                             </div>
@@ -312,18 +386,6 @@
                                 <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="detail.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -331,23 +393,23 @@
     </div>
     <div class="container-fluid text-white" style="background: #061429;">
         <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">copyright 2023|<a class="text-white " href="#">Amerzone C International Travel Agency|</a>. All Rights Reserved. 
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-6">
+              <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                <p class="mb-0">
+                  <a class="text-white" href="index.html">Amerzone C International Travel Agency</a> | &copy; 2023. All Rights Reserved.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+      
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="contact.html" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -361,51 +423,48 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-    
-      const name = document.getElementById('name-input').value;
-      const email = document.getElementById('email-input').value;
-      const subject = document.getElementById('subject-input').value;
-      const phone = document.getElementById('phone-input').value;
-      const message = document.getElementById('message-input').value;
-    
-      if (name && email && phone && subject && message) {
-        sendEmail(name, email,phone, subject, message);
-      } else {
-        alert('Please fill out all fields.');
-      }
-    });
-    
-    function sendEmail(name, email,phone, subject, message) {
-      emailjs.send('service_hjn2j4q', 'template_vkmp2hb', {
-        from_name: name,
-        from_email: email,
-        phone:phone,
-        subject: subject,
-        message: message,
-        to_email: 'amerzonec@gmail.com'
-      })
-      .then(function(response) {
-        alert('Message sent successfully.');
-        clearForm();
-      }, function(error) {
-        alert('Failed to send the message.');
-      });
-    }
-    
-    function clearForm() {
-      document.getElementById('name-input').value = '';
-      document.getElementById('email-input').value = '';
-      document.getElementById('phone-input').value = '';
-      document.getElementById('subject-input').value = '';
-      document.getElementById('message-input').value = '';
-    }
-    
-    </script>
 </body>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
+  const name = document.getElementById('name-input').value;
+  const email = document.getElementById('email-input').value;
+  const phone = document.getElementById('phone-input').value;
+  const subject = document.getElementById('subject-input').value;
+  const message = document.getElementById('message-input').value;
 
+  if (name && email && phone && subject && message) {
+    sendEmail(name, email,phone, subject, message);
+  } else {
+    alert('Please fill out all fields.');
+  }
+});
+
+function sendEmail(name, email,phone, subject, message) {
+  emailjs.send('service_hjn2j4q', 'template_vkmp2hb', {
+    from_name: name,
+    from_phone: phone,
+    from_email: email,
+    subject: subject,
+    message: message,
+    to_email: 'amerzonec@gmail.com'
+  })
+  .then(function(response) {
+    alert('Message sent successfully.');
+    clearForm();
+  }, function(error) {
+    alert('Failed to send the message.');
+  });
+}
+
+function clearForm() {
+  document.getElementById('name-input').value = '';
+  document.getElementById('email-input').value = '';
+  document.getElementById('phone-input').value = '';
+  document.getElementById('subject-input').value = '';
+  document.getElementById('message-input').value = '';
+}
+
+</script>
 </html>

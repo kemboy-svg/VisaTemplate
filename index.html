@@ -3,17 +3,163 @@
 
 <head>
     <style>
-        .logo-container {
-  display: flex;
-  align-items: center;
+      @media (max-width: 576px){
+        .carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 30, 62, .7);
+  z-index: 1;
+  height: 400px;
+  width: 100%;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  border-radius: 50%; /* Make the logo circular */
-  border: none; /* Remove the border around the logo */
+.carousel-caption .caption-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+}
+
+.carousel-caption h1 {
+  font-size: 18px !important;
+  margin-bottom: 10px;
+  margin-top: -160px;
+}
+
+.carousel-caption ul {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.carousel-caption li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.carousel-caption li span {
+  font-size: 16px;
+}
+
+.carousel-caption li h2 {
+  font-size: 14px;
+  margin-top: 10px;
+   line-height: 0.1;
+}
+
+.carousel-caption .btn {
+  margin-top: 0px;
+  white-space: normal;
+}
+
+/* @media (max-width: 576px) {
+  .carousel-caption .caption-container {
+    top: 40%;
+  }
+} */
+}
+@media (min-width: 768px){
+  .country-image{
+    width: 550px !important;
+  }
+}
+  @media (max-width: 767px) {
+    .country-card {
+      margin-bottom: 20px; /* Add margin between country cards */
+    }
+  }
+  @media (min-width: 768px) {
+  .video-item {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  .video-item iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .video-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .video-item iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.video-item {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px; /* Adjust the spacing between videos by changing the value */
+}
+
+.video-item:last-child {
+  margin-right: 0; /* Remove right margin for the last video */
+}
+
+.video-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove the border */
+}
+
+.video-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #ccc; /* Add a 1px solid border around the thumbnail */
+}
+
+
+ .whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+}
+
+.whatsapp-icon-box {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.whatsapp-icon-text {
+  color: #555555;
+}
+.whatsapp-icon-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
 }
 
 .list-columns {
@@ -43,36 +189,62 @@
     width: 100%;
     height: 100%;
   }
-  .company-name {
-  font-size: 24px;
-  text-align: center;
+  
+@media (max-width: 576px) {
+ .logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: -85px; /* Adjust the margin as needed */
+}
+}
+  .logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: -40px; /* Adjust the margin as needed */
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 3px;
+  border-radius: 50%;
+  border: none;
+}
+
+.company-name {
+  font-size: 15px;
+  text-align: left;
+  margin-left:0px;
+}
 
 .name {
   font-weight: bold;
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: 8px;
   color: #999;
-  text-align: center;
+  text-align: left;
 }
-@media (max-width: 767px) {
-    .col-lg-7 {
-      width: 100%;
+
+.navbar-collapse {
+  margin-left: 10px;
+}
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        position: absolute;
+        top: 30px;
+        right:-10px;
+        transform: translate(-50%, 50%);
     }
-    .col-lg-5 {
-      width: 100%;
-    }
-  }
+}
+
       </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> AMERZONE C INTERNATIONAL TRAVEL AGENCY</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Travel with Confidence" name="keywords">
-    <meta content="Travel with Confidence" name="description">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -162,58 +334,65 @@
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="contact.html"><i class="fab fa-youtube fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="contact.html"><i class="fab fa-instagram fw-normal"></i></a> -->
+                    <div><a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://youtube.com/@AMERZONECTRAVELAGENCY"><i class="fab fa-youtube fw-normal" ></i></a></div>
+                    <!-- <div style="margin-left: 10px;"><a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.tiktok.com/">
+                        <img src="img/tiktok.jpg" alt="TikTok" style="width: 24px; height: 24px;" style="margin-left: 10px;">
+                      </a></div> -->
                 </div>
             </div>
         </nav>
-
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/pic4.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-<section class="services-section py-5">
-  <div class="container">
-    <h1 class="text-white text-uppercase mb-3 animated slideInDown">Travel with confidence</h1><br><br>
-    <ul class="list-unstyled arrow-list">
-        <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Secure business visas with ease</h2></div></li>
-      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Explore new destinations</h2></div></li>
-      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Get good paying jobs abroad</h2></div></li>
-      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Create authentic personalized travel experiences</h2></div></li>
-      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Indulge in luxury accommodations</h2></div></li>
-    </ul>
-  </div>
-</section>
-                  <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Book Now</a>
-                        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="w-100 d-block" src="img/pic4.jpg" alt="Image">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center p-0">
+                <section class="services-section py-5">
+                  <div class="container">
+                    <h1 class="text-white text-uppercase mb-3 animated slideInDown">Travel with confidence</h1>
+                    <ul class="list-unstyled arrow-list">
+                      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Secure business visas with ease</h2></div></li>
+                      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Explore new destinations</h2></div></li>
+                      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Get good paying jobs abroad</h2></div></li>
+                      <!-- <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Create authentic travel experiences</h2></div></li> -->
+                      <!-- <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Indulge in luxury accommodations</h2></div></li> -->
+                    </ul>
+                    <div class="text-center">
+                      <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Book Now</a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/pic5.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-  <section class="services-section py-5">
-  <div class="container">
-    <h1 class="text-white text-uppercase mb-3 animated slideInDown">Travel with confidence</h1>
-    <ul class="list-unstyled arrow-list">
-        <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Secure business visas with ease</h2></div></li>
-        <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Explore new destinations</h2></div></li>
-        <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Get good paying jobs abroad</h2></div></li>
-        <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Create authentic personalized travel experiences</h2></div></li>
-        <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Indulge in luxury accommodations</h2></div></li>
-    </ul>
-  </div>
-</section>
-                            <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Book Now</a>
-                        </div>
+                  </div>
+                  
+                </section>
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="w-100 d-block" src="img/pic5.jpg" alt="Image">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center p-0">
+                <section class="services-section py-5">
+                  <div class="container">
+                    <h1 class="text-white text-uppercase mb-3 animated slideInDown">Travel with confidence</h1>
+                    <ul class="list-unstyled arrow-list">
+                      <!-- <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Secure business visas with ease</h2></div></li> -->
+                      <!-- <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Explore new destinations</h2></div></li> -->
+                      <!-- <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Get good paying jobs abroad</h2></div></li> -->
+                      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Create authentic travel experiences</h2></div></li>
+                      <li><div class="d-flex align-items-start"><span class="mr-2 text-white">➢</span><h2 class="h5 mb-0 text-white">Indulge in luxury accommodations</h2></div></li>
+                    </ul>
+                    <div class="text-center">
+                      <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Book Now</a>
                     </div>
-                </div>
-    </div>
-    <!-- Navbar & Carousel End -->
+                  </div>
+                  
+                </section>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
-
+          
     <!-- Full Screen Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
@@ -233,99 +412,54 @@
     <!-- Full Screen Search End -->
 
 
-    <!-- Facts Start -->
-    <!--
-    <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Happy Clients</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
+<!-- About Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                    <h1 class="mb-0">The Best Travel Agency and Consultants with over 10 Years of Experience</h1>
+                </div>
+                <p class="mb-4">
+                    Travel with confidence with our expert travel agency. We offer a wide range of services to make your travel experience unforgettable. 
+                </p>
+                <div class="row g-0 mb-3">
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Discover unforgettable adventures</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Escape to luxury destinations</h5>
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Create authentic,hassle-free travel experiences</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Secure business and tourist visas with ease</h5>
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Get employment abroad</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Timely Services,24/7 Support</h5>
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                        <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
                     </div>
                 </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
+                <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                        <i class="fa fa-phone-alt text-white"></i>
                     </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Win Awards</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
--->
-    <!-- Facts Start -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">The Best Immigration and Visa Consulants with 7 Years of Experience</h1>
-                    </div>
-                    <p class="mb-4">Travel with confidence with our expert travel agency. We offer a wide range of services to make your travel experience unforgettable. Explore new destinations, indulge in luxury accommodations, and create personalized travel experiences that are authentic and hassle-free.We make securing business visas easy and stress-free. Choose us for your next adventure and travel with confidence.
-
-                        At Amerzone,you get a chance to:<br>
-                    <ul>
-                       <li>Discover unforgettable adventures</li>
-                        <li>Escape to luxury destinations</li>
-                        <li>Create personalized travel experiences that are authentic and hassle-free</li>
-                        <li>Secure business visas with ease</li>
-                        <li>Get employment abroad</li>
-                    </ul></p>
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Timely Services</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Experience and expertise</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+254746220773</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img style="width: auto;height: auto";class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/blog3.jpg" style="object-fit: cover;">
+                    <div class="ps-4">
+                        <h5 class="mb-2">Call to ask any question</h5>
+                        <h4 class="text-primary mb-0"><a href="tel:+254746220773">Call: +254746220773</a></h4>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.9s" src="img/blog3.jpg" style="max-height: 400px; width: auto;" alt="About Image">
+            </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- About End -->
+
+
 
 
     <!-- Features Start -->
@@ -356,7 +490,7 @@
                 </div>
                 <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/pic1.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/pic3.jpg" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -397,8 +531,8 @@
                             <i class="fas fa-passport text-white"></i>
                         </div>
                         <h4 class="mb-3">Business Visas</h4>
-                        <p class="m-0">Do you need to travel internationally for a business conference or meeting? Look no further! Amerzonec International offers hassle-free business visa services to help you achieve your business goals.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <p class="m-0">Do you need to travel internationally for a business conference or meeting? Look no further! Amerzone C International offers hassle-free business visa services to help you achieve your business goals.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="contact.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -410,7 +544,7 @@
                         </div>
                         <h4 class="mb-3">Student Visas</h4>
                         <p class="m-0">Want to study abroad?Amerzonec is the key to your success.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="contact.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -422,7 +556,7 @@
                         </div>
                         <h4 class="mb-3">Tourist Visas</h4>
                         <p class="m-0">We provide assistance in obtaining tourist visas for international travel.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="contact.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -433,8 +567,8 @@
                                 <i class="fa fa-search text-white"></i>
                             </div>
                             <h4 class="mb-3">Job Search</h4>
-                            <p class="m-0">Looking for employment opportunities abroad? Amerzonec can help you find job openings and navigate the job search process in your desired destination.</p>
-                            <a class="btn btn-lg btn-primary rounded" href="">
+                            <p class="m-0">Looking for employment opportunities abroad? Amerzone C helps you find job openings and navigate the job search process in your desired destination.</p>
+                            <a class="btn btn-lg btn-primary rounded" href="contact.html">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -446,8 +580,8 @@
                                 <i class="fa fa-comments text-white"></i>
                             </div>
                             <h4 class="mb-3"> Visa and Tour Consultation</h4>
-                            <p class="m-0">Need expert advice and guidance for your international travel plans? Amerzonec offers professional consultation services to help you make informed decisions.</p>
-                            <a class="btn btn-lg btn-primary rounded" href="">
+                            <p class="m-0">Amerzone C offers professional consultation services to help you make informed decisions.</p>
+                            <a class="btn btn-lg btn-primary rounded" href="contact.html">
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -460,7 +594,7 @@
                         </div>
                         <h4 class="mb-3">Hotel Bookings</h4>
                         <p class="m-0">We offer hotel booking services to ensure that you have the most affordable, comfortable, and convenient stay during your international travel.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="contact.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -471,8 +605,8 @@
                             <i class="fas fa-plane text-white"></i>
                         </div>
                         <h4 class="mb-3">Flight Bookings</h4>
-                        <p class="m-0">Our team of experts can help you find the best flights that meet your travel needs and budget.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <p class="m-0">Our team of experts help you find the best flights that meet your travel needs and budget.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="contact.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -481,8 +615,70 @@
             </div>
         </div>
     </div>
+
+
+    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+        <h5 class="fw-bold text-primary text-uppercase">Countries</h5>
+        <h1 class="mb-0">Our Destinations include:</h1>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="country-card">
+            <a href="usa.html">
+             
+              <h2 class="country-title">United States</h2>
+              <p class="country-description">Explore the vibrant cities and natural wonders of the United States.</p>
+              <img style="width: 300px;height:300px;" src="img/usa.jpg" alt="United States" class="country-image">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="country-card">
+            <a href="uk.html">
+              <h2 class="country-title">United Kingdom</h2>
+              <p class="country-description">Experience the rich history and cultural diversity of the United Kingdom.</p>
+              <img style="width: 300px;height:300px" src="img/ukk.jpg" alt="United Kingdom" class="country-image">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="country-card">
+            <a href="Australia.html">
+              
+              <h2 class="country-title">Australia</h2>
+              <p class="country-description">Experience the breathtaking landscapes and unique wildlife of Australia.</p>
+              <img style="width: 300px;height:300px" src="img/Australia.jpg" alt="Australia" class="country-image">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="country-card">
+            <a href="Schengen.html">
+              
+              <h2 class="country-title">Schengen Countries</h2>
+              <p class="country-description">Discover the diverse cultures and historical landmarks of the Schengen area.</p>
+              <img style="width: 300px;height:300px" src="img/Schengen.jpg" alt="Schengen" class="country-image">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <a href="https://wa.me/254746220773" target="_blank" class="whatsapp-icon">
+        <img src="img/whatsapp-icon.jpg" alt="WhatsApp" class="whatsapp-icon-img">
+        <span class="whatsapp-icon-text">Contact Us</span>
+      </a>
+      
+      
+
     <!-- Service End -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container py-5">
     <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
       <h5 class="fw-bold text-primary text-uppercase">Our Success Stories</h5>
@@ -490,130 +686,41 @@
     </div>
     <div class="row g-0 mb-3">
         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Expert insights</h5>
-            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>In-depth explanations</h5>
+            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Expert insights and In-depth explanations</h5>
+            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Inspiring client success stories</h5>
         </div>
         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Latest trends in international travel24/7 Support</h5>
+            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Latest trends in international travel</h5>
             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Visa updates</h5>
         </div>
         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Job advertisements</h5>
-            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Inspiring client success stories</h5>
         </div>
-    </div> -->
-    <!-- <div class="row g-5">
-      <div class="col-lg-12">
-        <ul class="list-columns">
-          <li>&#10003; Expert insights</li>
-          <li>&#10003; In-depth explanations</li>
-          <li>&#10003; Latest trends in international travel</li>
-          <li>&#10003; Visa updates</li>
-          <li>&#10003; Job advertisements</li>
-          <li>&#10003; Inspiring client success stories</li>
-        </ul>
-      </div> -->
-  <!-- <div class="col-lg-12">
-  <div class="video-container">
-    <div class="video-item">
-      <iframe
-        src="https://www.tiktok.com/embed/v2/7230762636252564741?autoplay=0&rel=0&playsinline=1&muted=1"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="video-item">
-      <iframe
-        src="https://www.tiktok.com/embed/v2/7229601388316101893?autoplay=0&rel=0&playsinline=1&muted=1"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="video-item">
-      <iframe
-        src="https://www.tiktok.com/embed/v2/7230415714874707205?autoplay=0&rel=0&playsinline=1&muted=1"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="video-item">
-      <iframe
-        src="https://www.tiktok.com/embed/v2/7228948231827295493?autoplay=0&rel=0&playsinline=1&muted=1"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-</div>
-
-    </div>
-  </div>
-</div> -->
-
-
-
-    <!-- Quote Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
-                    </div>
-                    <div class="row gx-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
-                        </div>
-                    </div>
-                    <p class="mb-4">Thank you for considering our services for your immigration and visa needs.We are committed to providing you with personalized support throughout the application process.Please contact us for consultation and quote. We look forward to helping you achieve your travel and immigration goals.</p>
-                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+254746220773</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected style="color:black">Select A Service</option>
-                                        <option value="1">Visa Service</option>
-                                        <option value="2">Hotel and Flight Booking</option>
-                                        <option value="3">Consultation</option>
-                                        <option value="3">Job Search</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    </div> 
+    <div class="col-lg-12">
+        <div class="video-container">
+          <div class="video-item">
+            <iframe
+              src="https://www.youtube.com/embed/YxDEWOUmRk8?autoplay=0&modestbranding=1&rel=0"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="video-item">
+            <iframe
+              src="https://www.youtube.com/embed/GdRTIANiPwE?autoplay=0&modestbranding=1&rel=0"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="video-item">
+            <iframe
+              src="https://www.youtube.com/embed/LKzB9mSKDsg?autoplay=0&modestbranding=1&rel=0"
+              frameborder="0"
+            ></iframe>
+          </div>
         </div>
-    </div>
-    <!-- Quote End -->
-
+      </div>
+      
+   
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -664,257 +771,157 @@
     <!-- Testimonial End -->
 
 
-    <!-- Team Start -->
-    <!--
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-    <!-- Team End -->
 
 
     <!-- Blog Start -->
-    <!-- Blog Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
                 <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <div class="ps-4">
                             <img class="img-fluid" src="img/ircc.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Documents for your trip</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i><em>By Admin</em></small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>11 Jan, 2021</small>
-                            </div>
-                            <h4 class="mb-3">IRCC Makes New Extension For Visitors to Work Permit Policy By 2 Years</h4>
-                            <p>Today, the Immigration, Refugees and Citizenship Canada (IRCC) has announced the extension of a temporary policy allowing individuals with visitor visas in Canada to apply for work permits within the country. This extension comes as the previous temporary policy was scheduled to expire today, making it significant news for visitor visa holders.</p>
-                            <a class="text-uppercase" href="detail.html">Read More <i class="bi bi-arrow-right"></i></a>
+                            <h4 class="text-primary mb-1"> <small class="me-3"><i class="far fa-user text-primary me-2"></i><em>By Admin</em></small></h4>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>11 Jan, 2023</small>
                         </div>
                     </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <h4 class="mb-3">IRCC Makes New Extension For Visitors to Work Permit Policy By 2 Years</h4>
+                        <p>Today, the Immigration, Refugees and Citizenship Canada (IRCC) has announced the extension of a temporary policy allowing individuals with visitor visas in Canada to apply for work permits within the country. This extension comes as the previous temporary policy was scheduled to expire today, making it significant news for visitor visa holders.</p>
+                        <a class="text-uppercase" href="detail.html">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <!-- <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" > -->
+                        <div class="ps-4">
                             <img class="img-fluid" src="img/blog2.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Jobs in Canada</a>
+                            <h4 class="text-primary mb-1"> <small class="me-3"><i class="far fa-user text-primary me-2"></i><em>By Admin</em></small></h4>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>24 Feb, 2021</small>
                         </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i><em>By Admin</em></small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>24 Feb, 2022</small>
-                            </div>
-                            <h4 class="mb-3">Visa Requirements for your business trip to Canada</h4>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <h4 class="mb-3">Visa Requirements for your business trip to Canada</h4>
                             <p>Canada is an excellent market for companies that are searching to grow their business internationally. The great economic freedom of the country, its highly skilled workforce and the easy access to the US market have made of Canada one of the most dynamic economies in the world and a great country to do business with.</p>
                             <a class="text-uppercase" href="detail.html">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <!-- <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" > -->
+                        <div class="ps-4">
                             <img class="img-fluid" src="img/blog1.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="detail.html">Study in Germany</a>
+                            <h4 class="text-primary mb-1"> <small class="me-3"><i class="far fa-user text-primary me-2"></i><em>By Admin</em></small></h4>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Mar, 2023</small>
                         </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i><em>By Admin</em></small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Mar, 2023</small>
-                            </div>
-                            <h4 class="mb-3">International Students Flock to Germany for Job Prospects, Study Reveals</h4>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        <h4 class="mb-3">International Students Flock to Germany for Job Prospects, Study Reveals</h4>
                             <p>International students to Germany have cited good job prospects as the main reason for picking the country as a study destination, while German students that study abroad prioritise personal development and cultural interest for their academic decisions, the German Academic Exchange Service (DAAD) has revealed.</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
+                            <a class="text-uppercase" href="detail.html">Read More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Blog Start -->
-    <!-- Blog Start -->
+    <!-- Blog End -->
 
 
-    <!-- Vendor Start -->
-    <!--
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.jpg" alt="">
-                    <img src="img/vendor-2.jpg" alt="">
-                    <img src="img/vendor-3.jpg" alt="">
-                    <img src="img/vendor-4.jpg" alt="">
-                    <img src="img/vendor-5.jpg" alt="">
-                    <img src="img/vendor-6.jpg" alt="">
-                    <img src="img/vendor-7.jpg" alt="">
-                    <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-    <!-- Vendor End -->
     
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">Nairobi ,Kenya</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">amerzonec@gmail.com</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+254 746 220 773</p>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+      <div class="container">
+          <div class="row gx-5">
+              <div class="col-lg-8 col-md-6">
+                  <div class="row gx-5">
+                      <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                          <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                              <h3 class="text-light mb-0">Get In Touch</h3>
+                          </div>
+                          <div class="d-flex mb-2">
+                              <i class="bi bi-geo-alt text-primary me-2"></i>
+                              <p class="mb-0">Nairobi ,Kenya</p>
+                          </div>
+                          <div class="d-flex mb-2">
+                              <i class="bi bi-envelope-open text-primary me-2"></i>
+                              <p class="mb-0"><a href="amerzonec@gmail.com"></a>amerzonec@gmail.com</a></p>
+                          </div>
+                          <div class="d-flex mb-2">
+                              <i class="bi bi-telephone text-primary me-2"></i>
+                              <p class="mb-0"><a href="tel:+254746220773">+254 746 220 773</a></p>
+                          </div>
+                          <div class="d-flex mt-4">
+                              <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a> -->
+                              <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/profile.php?id=100083144720414"><i class="fab fa-facebook-f fw-normal"></i></a>
+                              <a class="btn btn-primary btn-square me-2" href="https://wa.me/254746220773"><i class="fab fa-whatsapp fw-normal"></i></a>
+                              <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                              <a class="btn btn-primary btn-square" href="https://youtube.com/@AMERZONECTRAVELAGENCY">
+                                  <i class="fab fa-youtube fw-normal"></i>
+                                </a>
+                                
+                                <a class="btn btn-primary btn-square" href="https://www.tiktok.com/@amerzonetravelagency?_t=8cKwa8FmmJy&_r=1" style="margin-left: 10px;">
+                                  <img src="img/tiktok.jpg" alt="TikTok" class="fa-fw">
+                                </a>
+                                
+                                
+                                
 
 
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Quick Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="detail.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="detail.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                          <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                              <h3 class="text-light mb-0">Quick Links</h3>
+                          </div>
+                          <div class="link-animated d-flex flex-column justify-content-start">
+                              <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                              <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                              <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                              <a class="text-light mb-2" href="detail.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                              <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid text-white" style="background: #061429;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 col-md-6">
+            <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+              <p class="mb-0">
+                <a class="text-white" href="index.html">Amerzone C International Travel Agency</a> | &copy; 2023. All Rights Reserved.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="container-fluid text-white" style="background: #061429;">
-        <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">copyright 2023|<a class="text-white " href="#">Amerzone C International Travel Agency|</a>. All Rights Reserved. 
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+    
+  <!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Back to Top -->
+  <a href="index.html" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
